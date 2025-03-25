@@ -2,7 +2,7 @@ package 中级
 
 fun main() {
     // 接受一个参数为String，输出为Int的函数类型
-    // 普通函数
+    // 单参函数
     val func: (String) -> Int = {
         println(it)  // 此处it表示接收的参数string
         10  //此处代表的是返回值Int
@@ -15,7 +15,7 @@ fun main() {
         20
     }
 
-    // 当参数一（或其他参数）不调用时，添加下划线
+    // 当参数一（或其他参数）不调用时，添加下划线（多参）
     val func3: (String, String) -> Int = { _, b ->
         println(b)
         20
@@ -28,6 +28,7 @@ fun main() {
     test(func3)  // 此处与下面的效果一致
     println("---")
 
+    // lambda表达式写法（多参）
     test{ _, b ->
         println(b)
         20
@@ -35,6 +36,7 @@ fun main() {
 
     println("---")
 
+    //  lambda表达式写法（单参）
     test2{
         println(it)
         30
