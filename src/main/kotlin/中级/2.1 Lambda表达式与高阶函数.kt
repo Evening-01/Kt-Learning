@@ -48,7 +48,7 @@ fun main() {
     test3("Kotlin") {
         println(it)
         6
-    }
+    }  // 此处与安卓compose声明式UI结构一致
 
     println("---")
 
@@ -74,19 +74,19 @@ fun main() {
     }  // 不要觉得眼花，其效果是和上面一致的
 }
 
-fun test(func: (String, String) -> Int) {
+private fun test(func: (String, String) -> Int) {
     println(func("Hello", "World"))
 }
 
-fun test2(func: (String) -> Int) {
+private fun test2(func: (String) -> Int) {
     println(func("Hello World"))
 }
 
-fun test3(a: String, func: (String) -> Int) {
+private fun test3(a: String, func: (String) -> Int) {
     println(func(a + "Hello World"))
 }
 
-fun test4(func: (Int) -> String) {
+private fun test4(func: (Int) -> String) {
     println(func(9))
     println("---")
     println(func(12))
