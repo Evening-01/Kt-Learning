@@ -2,7 +2,7 @@ package 中级.类的定义_对象的创建与使用
 
 // 此处对应 中级：类的定义
 // 主构造函数可以省略constructor关键字，如果主构造函数没有任何参数，可以省略括号
-// 类属性可以声明为val或var，默认是var
+// 类属性可以声明为val或var，默认是val
 /*
     class Student(val name: String, var age: Int = 18){
 

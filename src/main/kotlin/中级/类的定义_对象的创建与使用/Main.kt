@@ -10,4 +10,7 @@ fun main() {
 
     println(stu2.name)
     println(stu2.age)
+
+    println("---")
+    Student2("王五")
 }
